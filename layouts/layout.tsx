@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react';
+import { RecoilRoot } from 'recoil';
 import PcMainView from '../components/layouts/pc/main';
 import SpMainView from '../components/layouts/sp/main';
 
@@ -9,13 +10,15 @@ type Props = {
 const Layout: FC<Props> = ({ children }) => {
   const isMobile = false;
   return (
-    <div id="app" className="theme">
-      {isMobile ? (
-        <SpMainView>{children}</SpMainView>
-      ) : (
-        <PcMainView>{children}</PcMainView>
-      )}
-    </div>
+    <RecoilRoot>
+      <div id="app" className="theme">
+        {isMobile ? (
+          <SpMainView>{children}</SpMainView>
+        ) : (
+          <PcMainView>{children}</PcMainView>
+        )}
+      </div>
+    </RecoilRoot>
   );
 };
 
