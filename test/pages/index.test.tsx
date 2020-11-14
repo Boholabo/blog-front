@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '../testUtils';
+import { render } from '../testUtils';
 import Index from '../../pages/index';
 
 describe('Index page', () => {
