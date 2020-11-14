@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`layouts/pc/header component matches snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="header"
+    id="header"
+  >
+    <div
+      class="header-container container"
+    >
+      <div
+        class="header-header"
+      >
+        <img
+          alt="alt"
+          class="header-logo"
+        />
+        <a
+          class="header-link"
+          href="/"
+          title="$i18n.text.slogan"
+        />
+      </div>
+      <div
+        class="header-player"
+      >
+        <div
+          class="panel"
+        >
+          <button
+            class="prev-song button"
+          >
+            <i
+              class="iconfont icon-music-prev"
+            />
+          </button>
+          <button
+            class="toggle-play button"
+          />
+          <button
+            class="next-song button"
+          >
+            <i
+              class="iconfont icon-music-next"
+            />
+          </button>
+          <button
+            class="muted-toggle button"
+          >
+            <i
+              class="iconfont"
+            />
+          </button>
+        </div>
+        <div
+          class="song"
+        >
+          空
+        </div>
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;
