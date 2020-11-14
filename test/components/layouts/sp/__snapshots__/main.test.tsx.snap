@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`layouts/sp/main component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    id="app-main"
+  >
+    <main
+      class="main-container"
+      id="main"
+    >
+      <div
+        class="main-content"
+        id="main-content"
+      >
+        <div>
+          test
+        </div>
+      </div>
+    </main>
+  </div>
+</DocumentFragment>
+`;
