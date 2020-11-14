@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import {FC} from "react";
+import Link from 'next/link';
+import { FC } from 'react';
 
-const Header:FC = () => {
+const Header: FC = () => {
   return (
     <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
       <Link href="/">
@@ -9,7 +9,7 @@ const Header:FC = () => {
       </Link>
       .
     </h2>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

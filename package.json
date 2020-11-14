@@ -8,7 +8,7 @@
     "start": "next start",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore . --fix",
     "lint:style": "stylelint **/*.{js,jsx,ts,tsx,css,scss} --ignore-path .gitignore --fix",
-    "lint:prettier": "prettier --write \"**/*.+(js|jsx|json|css|md)\" --ignore-path .gitignore",
+    "lint:prettier": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|yml|yaml|css|scss|md)\" --ignore-path .gitignore",
     "format": "yarn lint:js && yarn lint:prettier"
   },
   "dependencies": {

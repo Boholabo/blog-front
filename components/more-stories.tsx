@@ -1,10 +1,10 @@
-import PostPreview from './post-preview'
-import Post from '../types/post'
-import {FC} from "react";
+import PostPreview from './post-preview';
+import Post from '../types/post';
+import { FC } from 'react';
 
 type Props = {
-  posts: Post[]
-}
+  posts: Post[];
+};
 
 const MoreStories: FC<Props> = ({ posts }) => {
   return (
@@ -26,7 +26,7 @@ const MoreStories: FC<Props> = ({ posts }) => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default MoreStories
+export default MoreStories;

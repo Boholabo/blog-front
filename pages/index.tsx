@@ -1,21 +1,21 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
-import Post from '../types/post'
-import {FC} from "react";
+import Container from '../components/container';
+import MoreStories from '../components/more-stories';
+import HeroPost from '../components/hero-post';
+import Intro from '../components/intro';
+import Layout from '../components/layout';
+import { getAllPosts } from '../lib/api';
+import Head from 'next/head';
+import { CMS_NAME } from '../lib/constants';
+import Post from '../types/post';
+import { FC } from 'react';
 
 type Props = {
-  allPosts: Post[]
-}
+  allPosts: Post[];
+};
 
 const Index: FC<Props> = ({ allPosts }) => {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  const heroPost = allPosts[0];
+  const morePosts = allPosts.slice(1);
   return (
     <>
       <Layout>
@@ -38,10 +38,10 @@ const Index: FC<Props> = ({ allPosts }) => {
         </Container>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
 
 // TODO: 型付け
 export const getStaticProps: any = async () => {
@@ -52,9 +52,9 @@ export const getStaticProps: any = async () => {
     'author',
     'coverImage',
     'excerpt',
-  ])
+  ]);
 
   return {
     props: { allPosts },
-  }
-}
+  };
+};
