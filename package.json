@@ -8,7 +8,7 @@
     "start": "next start",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore . --fix",
     "lint:style": "stylelint **/*.{js,jsx,ts,tsx,css,scss} --ignore-path .gitignore --fix",
-    "format": "yarn lint:js && yarn lint:style"
+    "format": "yarn lint:js"
   },
   "dependencies": {
     "classnames": "^2.2.6",

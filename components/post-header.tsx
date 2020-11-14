@@ -3,6 +3,7 @@ import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import PostTitle from './post-title'
 import Author from '../types/author'
+import {FC} from "react";
 
 type Props = {
     title: string
@@ -11,7 +12,7 @@ type Props = {
     author: Author
 }
 
-const PostHeader = ({ title, coverImage, date, author }: Props) => {
+const PostHeader: FC<Props> = ({ title, coverImage, date, author }) => {
     return (
         <>
             <PostTitle>{title}</PostTitle>

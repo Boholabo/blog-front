@@ -1,12 +1,13 @@
 import Container from './container'
 import cn from 'classnames'
 import { EXAMPLE_PATH } from '../lib/constants'
+import {FC} from "react";
 
 type Props = {
   preview?: boolean
 }
 
-const Alert = ({ preview }: Props) => {
+const Alert: FC<Props> = ({ preview }) => {
   return (
     <div
       className={cn('border-b', {

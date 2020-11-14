@@ -1,5 +1,6 @@
 import cn from 'classnames'
 import Link from 'next/link'
+import {FC} from "react";
 
 type Props = {
   title: string
@@ -7,7 +8,7 @@ type Props = {
   slug?: string
 }
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const CoverImage: FC<Props> = ({ title, src, slug }) => {
   const image = (
     <img
       src={src}

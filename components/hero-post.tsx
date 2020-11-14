@@ -3,6 +3,7 @@ import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 import Author from '../types/author'
+import {FC} from "react";
 
 type Props = {
   title: string
@@ -13,7 +14,7 @@ type Props = {
   slug: string
 }
 
-const HeroPost = ({
+const HeroPost: FC<Props> = ({
   title,
   coverImage,
   date,

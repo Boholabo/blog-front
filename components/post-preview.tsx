@@ -3,6 +3,7 @@ import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 import Author from '../types/author'
+import {FC} from "react";
 
 type Props = {
   title: string
@@ -13,14 +14,14 @@ type Props = {
   slug: string
 }
 
-const PostPreview = ({
+const PostPreview: FC<Props>= ({
   title,
   coverImage,
   date,
   excerpt,
   author,
   slug,
-}: Props) => {
+}) => {
   return (
     <div>
       <div className="mb-5">

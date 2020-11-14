@@ -11,6 +11,7 @@ import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import PostType from '../../types/post'
+import {FC} from "react";
 
 type Props = {
   post: PostType
@@ -18,11 +19,12 @@ type Props = {
   preview?: boolean
 }
 
-const Post = ({ post, morePosts, preview }: Props) => {
+const Post: FC<Props> = ({ post, morePosts, preview }) => {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
+  console.log(morePosts)
   return (
     <Layout preview={preview}>
       <Container>
@@ -61,7 +63,8 @@ type Params = {
   }
 }
 
-export async function getStaticProps({ params }: Params) {
+// TODO: 型付け
+export const getStaticProps: any = async ({ params }: Params) => {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
@@ -83,11 +86,12 @@ export async function getStaticProps({ params }: Params) {
   }
 }
 
-export async function getStaticPaths() {
+// TODO: 型付け
+export const getStaticPaths: any = async () => {
   const posts = getAllPosts(['slug'])
 
   return {
-    paths: posts.map((posts) => {
+    paths: posts.map((posts: { slug: string }) => {
       return {
         params: {
           slug: posts.slug,
