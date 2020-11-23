@@ -5,6 +5,65 @@ exports[`layouts/pc/main component matches snapshot 1`] = `
   <div
     id="app-main"
   >
+    <header
+      class="header"
+      id="header"
+    >
+      <div
+        class="header-container container"
+      >
+        <div
+          class="header-header"
+        >
+          <img
+            alt="alt"
+            class="header-logo"
+          />
+          <a
+            class="header-link"
+            href="/"
+            title="$i18n.text.slogan"
+          />
+        </div>
+        <div
+          class="header-player"
+        >
+          <div
+            class="panel"
+          >
+            <button
+              class="prev-song button"
+            >
+              <i
+                class="iconfont icon-music-prev"
+              />
+            </button>
+            <button
+              class="toggle-play button"
+            />
+            <button
+              class="next-song button"
+            >
+              <i
+                class="iconfont icon-music-next"
+              />
+            </button>
+            <button
+              class="muted-toggle button"
+            >
+              <i
+                class="iconfont"
+              />
+            </button>
+          </div>
+          <div
+            class="song"
+          >
+            空
+          </div>
+        </div>
+      </div>
+    </header>
     <main
       class="main-container"
       id="main"
@@ -18,6 +77,41 @@ exports[`layouts/pc/main component matches snapshot 1`] = `
         </div>
       </div>
     </main>
+    <footer
+      class="footer"
+      id="footer"
+    >
+      <div
+        class="container"
+      >
+        <span>
+          Powered By
+        </span>
+        <a
+          class="item"
+          href="blog"
+          rel="noreferrer nofollow noopener"
+          target="_blank"
+        >
+          blog
+        </a>
+        <span>
+          <a
+            class="item"
+            href="https://boholabo.com"
+            rel="noreferrer nofollow noopener"
+            target="_blank"
+          >
+            Boholabo
+          </a>
+          <a
+            href="/about"
+          >
+            Me
+          </a>
+        </span>
+      </div>
+    </footer>
   </div>
 </DocumentFragment>
 `;

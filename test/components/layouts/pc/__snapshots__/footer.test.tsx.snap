@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`layouts/pc/footer component matches snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="footer"
+    id="footer"
+  >
+    <div
+      class="container"
+    >
+      <span>
+        Powered By
+      </span>
+      <a
+        class="item"
+        href="blog"
+        rel="noreferrer nofollow noopener"
+        target="_blank"
+      >
+        blog
+      </a>
+      <span>
+        <a
+          class="item"
+          href="https://boholabo.com"
+          rel="noreferrer nofollow noopener"
+          target="_blank"
+        >
+          Boholabo
+        </a>
+        <a
+          href="/about"
+        >
+          Me
+        </a>
+      </span>
+    </div>
+  </footer>
+</DocumentFragment>
+`;
