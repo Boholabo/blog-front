@@ -7,9 +7,11 @@ type Props = {
   article: { data: { data: [] } };
 };
 
-const List: FC<Props> = ({ article }) => {
+const List: FC<Props> = () => {
   const router = useRouter();
-  const isRouteIndex = useMemo(() => isIndexRoute(router.pathname), []);
+  const isRouteIndex = useMemo(() => isIndexRoute(router.pathname), [
+    router.pathname,
+  ]);
 
   return (
     <div>

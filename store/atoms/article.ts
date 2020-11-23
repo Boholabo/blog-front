@@ -1,5 +1,4 @@
 import { atom } from 'recoil';
-import systemConstants from '../../constants/system';
 
 export const ARTICLE_API_PATH = '/article';
 export const LIKE_ARTICLE_API_PATH = '/like/article';

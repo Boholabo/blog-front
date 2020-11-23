@@ -1,6 +1,6 @@
 import parser from 'ua-parser-js';
 
-export const uaParser = (userAgent: string) => {
+export const uaParser: any = (userAgent: string) => {
   const parseResult = (parser as any)(userAgent || '');
   const browserName = String(parseResult.browser.name).toLowerCase();
   const isBrowser = (browsers: string[]) => {
