@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 // import { useRecoilValue } from 'recoil';
-// import { getCurrentTag } from '../../../store/selectors/tag';
+// import { getCurrentTag } from '@/store/selectors/tag';
 
 const ListHeader: FC = () => {
   // const currentTag = useRecoilValue(getCurrentTag);

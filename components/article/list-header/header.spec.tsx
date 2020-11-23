@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '../../../test/testUtils';
+import { render } from '@/test/testUtils';
 import ListHeader from './index';
 
 describe('article/list-header component', () => {

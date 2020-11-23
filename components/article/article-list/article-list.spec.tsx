@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '../../../test/testUtils';
+import { render } from '@/test/testUtils';
 import ArticleList from './index';
 
 jest.mock('next/router', () => ({

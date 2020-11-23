@@ -9,7 +9,15 @@ exports[`article/list component matches snapshot 1`] = `
       <div
         class="list-header"
       >
-        list-header
+        <div
+          class="logo-box"
+        >
+          <p
+            class="logo"
+          >
+            logo
+          </p>
+        </div>
       </div>
     </div>
   </div>
